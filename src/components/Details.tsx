@@ -58,7 +58,7 @@ export function Details({info}: UserInfo) {
                     <div className='info-box'>Loading...</div> 
                 :
                     <div className="info-box">
-                        <img src={infoUser.avatar} alt="" className='img-info'/>
+                        <img key={infoUser.id} src={infoUser.avatar} alt="" className='img-info'/>
                         <h1 className='name'>{infoUser.name}</h1>
                         <p className='info'>City: {infoUser.details.city}</p>
                         <p className='info'>Company: {infoUser.details.company}</p>
